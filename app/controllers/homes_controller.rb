@@ -2,11 +2,11 @@ class HomesController < ApplicationController
   def index
     # @list = Email.new
   end
-  # 
+  #
   # def new
   #   @list = Email.new
   # end
-  # #
+
   # def view
   #
   # end
@@ -25,8 +25,7 @@ class HomesController < ApplicationController
   #     render :new
   #   end
   # end
-  #
-  # private
+  #  ,./
   #
   # def edit_box_params
   #   params.permit(email: [:address, :created_at, :updated_at])
