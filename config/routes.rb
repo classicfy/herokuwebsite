@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   post '/' => 'homes#create'
 
-  get '/form' => 'homes#form'
+  # get '/form' => 'homes#form'
   # Example of regular route:
   # get '/about' => 'catalog#view'
 

@@ -70,7 +70,7 @@
 	}
 
 	h3 {
-		font-size: 1.35em;
+		font-size: 1.2em;
 		line-height: 1.5em;
 	}
 
@@ -188,7 +188,7 @@
 	}
 
 	header.major {
-		margin: 0 0 6em 0;
+		margin: 0 0 1em 0;
 	}
 
 	header.major h2 {
@@ -1021,7 +1021,9 @@
 			#header .container nav {
 				right: 0;
 			}
-
+.container{
+	width: 100%;
+}
 		#header.alt {
 			background-color: transparent;
 			border: 0;
@@ -1064,11 +1066,11 @@
 	#banner {
 		padding: 16em 0 13em 0;
 		background-attachment: fixed;
-		background-image: url("overlay.png"), url("bottom.jpg");
+		background-image: url("overlay.png"), url("front.jpg");
 		background-position-x: 0%;
 		background-position-y: 0%;
 		background-size: cover;
-		line-height: 9;
+		line-height: 15;
 		text-align: center;
 	}
 
@@ -1081,13 +1083,15 @@
 			display: inline-block;
 			font-size: 3.5em;
 			line-height: 1.35;
-			margin-bottom: 0.5em;
+			margin-top: -20px;
+			/*margin-bottom: 0.5em;*/
 		}
 
 		#banner p {
 			color: #aaa;
 			font-size: 1.5em;
 			margin-bottom: 1.75em;
+			margin-top: -230px;
 			text-transform: uppercase;
 		}
 
@@ -1113,7 +1117,7 @@
 
 		.wrapper.style3 {
 			background-attachment: fixed;
-			background-image: url("overlay.png"), url("b.jpg");
+			background-image: url("overlay.png"), url("emp.jpg");
 			background-position: center center;
 			background-size: cover;
 			line-height: 10;

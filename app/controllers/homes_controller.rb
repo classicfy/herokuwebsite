@@ -3,6 +3,7 @@ class HomesController < ApplicationController
     # @list = Email.new
   end
   #
+
   # def new
   #   @list = Email.new
   # end
@@ -11,6 +12,21 @@ class HomesController < ApplicationController
   #
   # end
   #
+  def create
+    @new = Email.new(email_params)
+
+    if @new.save
+      @new.update(address: params[:email])
+      redirect_to root_path
+    else
+      render :index
+    end
+  end
+
+  private
+  def email_params
+    params.permit(:address)
+  end
   # def create
   #   @list = Email.new(edit_box_params[:email])
   #   # @list.save

@@ -3,6 +3,11 @@
 <html class = "xlarge large medium small">
 	<head>
 		<title>Classicfy</title>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= stylesheet_link_tag 'font-awesome', media: 'all', 'data-turbolinks-track' => true %>
     <%= stylesheet_link_tag 'skel', media: 'all', 'data-turbolinks-track' => true %>
@@ -35,12 +40,14 @@
 			<link rel="stylesheet" href="css/style-xlarge.css" /> -->
 		<!-- </noscript> -->
 	</head>
-	<body class="landing">
-    <div id="skel-layers-parent" style="position: absolute; left: 0px; top: 0px; min-height: 100%; width: 100%;">
+	<body>
+
+	<!-- <body class="landing"> -->
+    <!-- <div id="skel-layers-parent" style="position: absolute; left: 0px; top: 0px; min-height: 100%; width: 100%;">
       <div id="skel-layers-wrapper" style="position: absolute; left: 0px; right: 0px; top: 0px; transition: top 0.5s ease, right 0.5s ease, bottom 0.5s ease, left 0.5s ease, opacity 0.5s ease;">
 
       </div>
-    </div>
+    </div> -->
 		<!-- Header -->
 			<header id="header" class="alt">
 				<h1><strong><a href="index.html">Classicfy</a></strong></h1>
@@ -56,7 +63,7 @@
 		<!-- Banner -->
 			<section id="banner">
 				<h2>Classicfy</h2>
-				<p>Personalizing classical music experiences.</p>
+				<p>Classical music for your personal taste.</p>
 				<!-- <ul class="actions">
 					<li><a href="#" class="button special big">Get Started</a></li>
 				</ul> -->
@@ -73,36 +80,70 @@
 								</header>
 							</div>
 							<div class="6u$ 12u$(medium)">
-								<p>lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ea mollitia corporis id, distinctio sunt veritatis officiis dolore reprehenderit deleniti voluptatibus harum magna, doloremque alias quisquam minus, eaque. Feugiat quod, nesciunt! Iste quos ipsam, iusto sit esse.</p>
-								<p>Dolorum aspernatur maxime libero ratione quidem distinctio, placeat fugiat laborum voluptatum enim neque soluta vel sunt id ex veritatis. Dolorum aspernatur maxime libero ratione quidem distinctio, placeat fugiat laborum voluptatum enim neque soluta vel sunt id ex veritatis. </p>
+								<p>Classicfy is the world's first personalized classical music discovery tool. We're building the bridge between modern day genres and thousands of years worth of styles, tastes, and genres that make up classical music. Explore the depths of the world's most exciting and passionate music, custom-curated by our team of experts to suite your specific musical tastes. Happy Listening!</p>
+								<!-- <p>Dolorum aspernatur maxime libero ratione quidem distinctio, placeat fugiat laborum voluptatum enim neque soluta vel sunt id ex veritatis. Dolorum aspernatur maxime libero ratione quidem distinctio, placeat fugiat laborum voluptatum enim neque soluta vel sunt id ex veritatis. </p> -->
 							</div>
 						</div>
 					</div>
 				</section>
+ </body>
 
 			<!-- Two -->
 				<section id="two" class="wrapper style2 special">
 					<div class="container">
 						<header class="major">
-							<h2>Our Solution</h2>
+							<h2>How it works</h2>
 							<!-- <p>Maecenas vitae tellus feugiat eleifend</p> -->
 						</header>
-						<div class="row 150%">
-							<div class="6u 12u$(small)">
-								<div class="image fit captioned">
-									<img src="../assets/example.jpg" alt="" />
-									<h3>Make Musical Connections.</h3>
+						<!-- <div class="row 120%"> -->
+
+						<ul>
+			      <div class="row">
+						  <div class="col-sm-6 col-md-4">
+			          <div class="thumbnail">
+			            <li>
+			              <div class="caption">
+										<%= image_tag("examples.jpg", width: '300') %>
+										<div class="producttitle">
+											<h3> Step 1: Select from your favorite songs or artists.</h3>
+										</div>
+										</div>
+									</li>
 								</div>
 							</div>
-							<div class="6u 12u$(small)">
-								<div class="image fit captioned">
-									<img src="../assets/example2.jpg" alt="" />
-									<h3>Curate Classical Playlists.</h3>
+
+							<div class="col-sm-6 col-md-4">
+								<div class="thumbnail">
+									<li>
+										<div class="caption">
+										<%= image_tag("example.jpg", width: '300') %>
+										<div class="producttitle">
+											<h3>Step 2: Our experts define musical connections.</h3>
+										</div>
+										</div>
+									</li>
 								</div>
 							</div>
-						</div>
+
+							<div class="col-sm-6 col-md-4">
+								<div class="thumbnail">
+									<li>
+										<div class="caption">
+										<%= image_tag("example2.jpg", width: '300') %>
+		                <div class="producttitle">
+											<h3>Step 3: You get a custom-curated classical playlist.</h3>
+										</div>
+										</div>
+									</li>
+								</div>
+							</div>
+						<!-- </div> -->
+					</ul>
+
+				</div>
+
 						<ul class="actions">
-							<li><a href="/form" class="button special big">Help Curate!</a></li>
+							<li><a href="https://docs.google.com/forms/d/1BWY6ZoRx1c4OjYjbpnchA5jERVFeyzR5245QLqrJ0nM/viewform" class="button special big">Help To Curate!</a></li>
 							<!-- <li><a href="#" class="button big">Sed vulputate</a></li> -->
 						</ul>
 					</div>
@@ -123,23 +164,11 @@
 							<div class="content">
 								<header>
 									<h4>Andrew Goldstein</h4>
-									<p>Director</p>
+									<p>Music Director</p>
 								</header>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore esse tenetur accusantium porro omnis, unde mollitia totam sit nesciunt consectetur.</p>
+								<p>With a passion for introducing classical music to new audiences, Andrew Goldstein is the co-founding Executive Director of Emerald City Music in Seattle. He has worked with arts institutions around the globe, and manages our community of expert curators.</p>
 							</div>
 						</div>
-						<div class="feature">
-							<div class="image rounded"><img src="../assets/cami.jpg" alt="" />
-							</div>
-							<div class="content">
-								<header>
-									<h4>Camila Cano</h4>
-									<p>Backend Engineer</p>
-								</header>
-								<p>Animi mollitia optio culpa expedita. Dolorem alias minima culpa repellat. Dolores, fuga maiores ut obcaecati blanditiis, at aperiam doloremque.</p>
-							</div>
-						</div>
-              <!-- <div class="6u 12u$(small)"> -->
 						<div class="feature">
 							<div class="image rounded"><img src="../assets/cristal.jpg" alt="" />
 							</div>
@@ -148,21 +177,35 @@
 									<h4>Cristal Tay</h4>
 									<p>Software Developer</p>
 								</header>
-								<p>Maiores iusto inventore fugit architecto est iste expedita commodi sed, quasi feugiat nam neque mollitia vitae omnis, ea natus facere.</p>
+								<p>A former percussionist, with a love of classical music, Cristal is excited to contribute to Classicfy with her software development knowledge.  Currently she is a fullstack developer in training at Ada Developers Academy.</p>
+								<!-- She has participated in classical music infused activities such as symphonic band, and drum corps (DCI). -->
+
 							</div>
 						</div>
               <!-- <div class="6u 12u$(small)"> -->
-					  <div class="feature">
+						<!-- <div class="feature">
+							<div class="image rounded"><img src="../assets/josh.jpg" alt="" />
+							</div>
+							<div class="content">
+								<header>
+									<h4>Person</h4>
+									<p>Stuff</p>
+								</header>
+								<p>Animi mollitia optio culpa expedita. Dolorem alias minima culpa repellat. Dolores, fuga maiores ut obcaecati blanditiis, at aperiam doloremque.</p>
+							</div>
+						</div> -->
+              <!-- <div class="6u 12u$(small)"> -->
+					  <!-- <div class="feature">
             	<div class="image rounded"><img src="../assets/josh.jpg" alt="" />
 							</div>
 							<div class="content">
 								<header>
 									<h4>Josh Peters</h4>
-									<p>UX Developer</p>
+									<p>UX Designer</p>
 								</header>
 								<p>Vitae earum unde, autem labore voluptas ex, iste dolorum inventore natus consequatur iure similique obcaecati aut corporis hic in! Porro sed.</p>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</section>
@@ -184,11 +227,13 @@
   		<!-- Footer -->
   			<footer id="footer">
   				<div class="container">
+						<p>Contact Us: (206) 250-5510</p>
   					<!-- <ul class="icons">
   						<li><a href="#" class="icon fa-facebook"></a></li>
   						<li><a href="#" class="icon fa-twitter"></a></li>
   						<li><a href="#" class="icon fa-instagram"></a></li>
   					</ul> -->
+						<!-- <br /> -->
   					<ul class="copyright">
   						<!-- <li> </li> -->
   						<li>&copy; Classicfy</li>
